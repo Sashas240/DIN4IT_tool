@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cat > /data/data/com.termux/files/usr/bin/skin << 'EOF'
+#!/bin/sh
+
+cd $HOME/DIN4IT_tool
+chmod +x *
+./skin
+rm -rf $HOME/DIN4IT_tool/setup
+EOF
+
+chmod +x /data/data/com.termux/files/usr/bin/skin
